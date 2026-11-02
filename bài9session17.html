@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bài9session17</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h2 id="phần-1-phân-tích-kiến-trúc-đa-profile">Phần 1: Phân tích kiến trúc đa Profile</h2>
+<h3 id="nguyên-nhân-văng-phiên-đăng-nhập">1. Nguyên nhân “văng phiên đăng nhập”</h3>
+<ul>
+<li><strong>Dùng chung User Data:</strong> Mọi người dùng chung 1 Profile sẽ lưu tất cả Cookie xác thực vào chung một thư mục.
+<ul>
+<li><strong>Xung đột Cookie:</strong> Khi sinh viên đăng nhập web cá nhân (GitHub, PTIT), hệ thống ghi đè Cookie, làm văng token đăng nhập CarePulse của Bác sĩ.</li>
+</ul>
+<h3 id="mô-hình-3-profile-chuyên-biệt">2. Mô hình 3 Profile chuyên biệt</h3>
+</li>
+</ul>
+<p><strong>Tiêu chí</strong><br>
+<strong>Profile 1: Work (Y tế)</strong><br>
+<strong>Profile 2: Personal (Cá nhân)</strong><br>
+<strong>Profile 3: Sandbox (Thực tập)</strong><br>
+<strong>Mục đích</strong><br>
+Bác sĩ khám bệnh, kê đơn CarePulse.<br>
+Đọc báo, giải trí ngoài giờ.<br>
+Sinh viên thực tập, test code PTIT.<br>
+<strong>Màu Theme</strong><br>
+<strong>Xanh dương</strong> (Chuyên nghiệp)<br>
+<strong>Xanh lá</strong> (Thư giãn)<br>
+<strong>Xám</strong> (Phân biệt)<br>
+<strong>Dữ liệu lưu độc lập</strong><br>
+Cookie/Lịch sử/Bookmark y tế chính thức.<br>
+Mạng xã hội, mua sắm cá nhân.<br>
+Lịch sử học tập, tài khoản GitHub.</p>
+<h2 id="phần-2-bookmark--an-toàn-thông-tin">Phần 2: Bookmark &amp; An toàn thông tin</h2>
+<h3 id="cây-thư-mục-bookmark-gọn-gàng">3. Cây thư mục Bookmark gọn gàng</h3>
+<ul>
+<li>** 01_CarePulse_Clinic:** Cổng CarePulse, Tra cứu BHYT, Hồ sơ Bệnh án EMR.
+<ul>
+<li>** 02_Pharma_Portal:** Dược thư Quốc gia, Danh mục thuốc đấu thầu, Tra tương tác thuốc.</li>
+<li>** 03_Medical_Tools:** Mã bệnh ICD-10, Máy tính chỉ số y khoa (BMI/GFR), Phác đồ Bộ Y tế.</li>
+</ul>
+<h3 id="mẹo-favicon-only-tiết-kiệm-3x-diện-tích">4. Mẹo Favicon-Only (Tiết kiệm 3x diện tích)</h3>
+</li>
+</ul>
+<ol>
+<li>Nhấp chuột phải vào Bookmark <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.36687em; vertical-align: 0em;"></span><span class="mrel">→</span></span></span></span></span> Chọn <strong>Chỉnh sửa (Edit)</strong>.<br>
+2.  <strong>Xóa hết chữ ở ô Tên (Name)</strong>, chỉ để lại Icon <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.36687em; vertical-align: 0em;"></span><span class="mrel">→</span></span></span></span></span> Bấm <strong>Lưu</strong>.<br>
+3.  <em>Áp dụng cho:</em> CarePulse, Cổng BHYT, Dược thư, Google Dịch.
+<h3 id="an-toàn-thông-tin">5. An toàn thông tin</h3>
+</li>
+</ol>
+<ul>
+<li><strong>Khi cho mượn máy 30 phút:</strong> Bật ngay <strong>Guest Profile (Chế độ Khách)</strong> để tạo phiên làm việc hoàn toàn độc lập, tắt xong tự xóa sạch dữ liệu.
+<ul>
+<li><strong>Cảnh báo Cloud Sync:</strong> Tuyệt đối <strong>KHÔNG bật đồng bộ tài khoản cá nhân</strong> trên máy phòng khám để tránh rò rỉ mật khẩu cá nhân và dữ liệu bảo mật của bệnh nhân lên mây.</li>
+</ul>
+</li>
+</ul>
+</div>
+</body>
+
+</html>
